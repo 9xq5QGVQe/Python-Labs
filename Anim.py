@@ -8,7 +8,7 @@ reset = "\033[0m"
 os.system('cls')
 
 
-for h in range(10): #количество кадров в одной анимации
+for h in range(4): #количество кадров в одной анимации
     pusto = ""
     for i in range(3):
         for j in range(3):
@@ -16,4 +16,4 @@ for h in range(10): #количество кадров в одной анима�
             pusto += color + "  "
         pusto += reset + "\n"
     print("\033[H" + pusto)
-    time.sleep(0.2)
+    time.sleep(0.4) #задержка между кадрами
